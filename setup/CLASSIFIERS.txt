@@ -1,0 +1,15 @@
+Development Status :: 1 - Planning
+Intended Audience :: Developers
+Intended Audience :: System Administrators
+Operating System :: OS Independent
+Programming Language :: Python
+Programming Language :: JavaScript
+Framework :: Pylons
+Framework :: Buildbot
+Framework :: Paste
+License :: OSI Approved :: MIT License
+Natural Language :: English
+Environment :: Web Environment
+Topic :: Internet :: WWW/HTTP
+Topic :: Text Processing :: Markup :: HTML
+Topic :: Utilities
