@@ -11,6 +11,7 @@ dependancies = [
     'repoze.tm2>=1.0b1',
     'WebError',
     'pyramid_jinja2',
+    'zope.interface',
 ]
 
 # Files that contain different metadata which is used for setting up the project

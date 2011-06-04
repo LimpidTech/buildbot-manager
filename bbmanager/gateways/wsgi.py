@@ -1,6 +1,6 @@
 from pyramid.config import Configurator
 from . import portability
-from ..resources.resource import Resource
+from ..resources.root import Root
 
 def factory(global_config, **settings):
     """ Application entry point factory for serving as a WSGI application.
@@ -10,7 +10,7 @@ def factory(global_config, **settings):
 
     """
 
-    config = Configurator(settings=settings, root_factory=Resource.factory)
+    config = Configurator(settings=settings, root_factory=Root.factory)
     config.include(portability.include_me)
     config.add_renderer('.html', 'pyramid_jinja2.renderer_factory')
 
