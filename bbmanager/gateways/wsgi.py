@@ -12,5 +12,6 @@ def factory(global_config, **settings):
 
     config = Configurator(settings=settings, root_factory=Resource.factory)
     config.include(portability.include_me)
+    config.add_renderer('.html', 'pyramid_jinja2.renderer_factory')
 
     return config.make_wsgi_app()
