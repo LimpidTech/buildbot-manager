@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+{% block head %}
+{% block meta %}
+    <meta charset=UTF-8 />
+{% endblock meta %}
+
+    <title>{% block title %}{% endblock title %}</title>
+{% endblock head %}
+</head>
+
+<body>
+{% block body %}
+
+    <div id=page-container>
+    {% block page_container %}
+
+        <div id=header-container>
+        {% block header_container %}
+            <div id=header>{% block header %}{% endblock header %}</div>
+        {% endblock header_container %}
+        </div>
+
+        <div id=content-container>
+        {% block content_container %}
+            <div id=content>{% block content %}{% endblock content %}</div>
+        {% endblock content_container %}
+        </div>
+
+        <div id=footer-push></div>
+
+    {% endblock page_container %}
+    </div>
+
+    <div id=footer-container>
+    {% block footer_container %}
+        <div id=footer>{% block footer %}{% endblock footer %}</div>
+    {% endblock footer_container %}
+    </div>
+
+{% endblock body %}
+</body>
+</html>
